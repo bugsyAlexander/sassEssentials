@@ -76,3 +76,37 @@ h1, h3 {
   border-width: 1px;
   border-color: black;
   border-style: solid; }
+
+/* =====================================================
+Functions
+===================================================== */
+.newColor {
+  -mox-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #c7a76b;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  display: block;
+  margin-bottom: 1em;
+  background-color: gray; }
+  .newColor p {
+    text-align: center;
+    color: #fffff3; }
+
+h1 {
+  color: orange;
+  background-color: gray; }
+
+h2 {
+  color: #ffc966; }
+
+h3 {
+  color: #ffdb99; }
+
+h4 {
+  color: #ffedcc; }

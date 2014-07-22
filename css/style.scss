@@ -15,6 +15,7 @@ $secColor		: #2A343D;
 $gray			: #444F58;
 $lightGray		: #77848C;
 $lightestGray	: #9DA9AE;
+$offWhite       : #FFFFF3;
 
 $myStringVar: " with an appended string";
 
@@ -144,3 +145,52 @@ Advanced SASS
 h1, h3 {
 	@include customBorder2(); // includes the default values
 }
+
+/* =====================================================
+Functions
+===================================================== */
+$newColor: orange;
+
+@mixin border-radius($radius: 5px) {
+    -mox-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.newColor {
+    @include border-radius;
+    border-color: hsl(hue($newColor), 45%, 60%);
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+
+    height: 50px;
+    width: 150px;
+    display: block;
+    margin-bottom: 1em;
+    // inverted
+    background-color: grayscale(invert($newColor));
+
+        p {
+            text-align: center;
+            color: $offWhite;
+        }
+}
+
+h1 {
+    color: $newColor;
+    background-color: grayscale(invert($newColor));
+}
+h2 { 
+    color: lighten($newColor, 20%);
+}
+h3 {
+    color: lighten($newColor, 30%);
+}
+h4 {
+    color: lighten($newColor, 40%);
+}
+
+
+
