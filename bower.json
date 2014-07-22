@@ -1,0 +1,19 @@
+{
+  "name": "sassLesson",
+  "version": "0.0.1",
+  "authors": [
+    "Mynor Alexander <sinrart@yahoo.com>"
+  ],
+  "description": "sass essentials",
+  "keywords": [
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,10 @@
+Using variables
+
+• numbers	$myVar: .25in;
+• strings	$myStr: “ some place of text”;
+• colors	$myColor: blue;
+• booleans	$myBool: false;
+• nulls		$myVarNull: null;
+• list		$myList: 2px 2px 2px 2px;
+or
+• list		$myNewList: 1px solid red;
