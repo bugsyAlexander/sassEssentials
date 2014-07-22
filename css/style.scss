@@ -113,3 +113,34 @@ $basethickness	: 4px;
     // basic math to add more to preset $basepadding variable 
     padding: $basepadding + 20; // 10 + 20 = 30px
 }
+
+
+/* =====================================================
+Advanced SASS 
+===================================================== */
+
+// using regular arguments
+@mixin customBorder ($width, $color, $style) {
+    border: {
+        width: $width;
+        color: $color;
+        style: $style;
+    }
+}
+
+// using named arguments with defaults
+@mixin customBorder2 ($width: 1px, $color: black, $style: solid) {
+    border: {
+        width: $width;
+        color: $color;
+        style: $style;
+    }
+}
+
+#mypara {
+    @include customBorder(3px, blue, dotted);
+}
+
+h1, h3 {
+	@include customBorder2(); // includes the default values
+}

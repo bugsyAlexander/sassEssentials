@@ -63,3 +63,16 @@ Operations
   color: blue;
   border: 9px solid blue;
   padding: 30px; }
+
+/* =====================================================
+Advanced SASS 
+===================================================== */
+#mypara {
+  border-width: 3px;
+  border-color: blue;
+  border-style: dotted; }
+
+h1, h3 {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid; }
