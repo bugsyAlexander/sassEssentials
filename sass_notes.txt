@@ -8,3 +8,11 @@ Using variables
 • list		$myList: 2px 2px 2px 2px;
 or
 • list		$myNewList: 1px solid red;
+
+
+// Output-style formatting
+sass —update
+• —style nested //default 
+• —style expanded 
+• —style compact
+• —style compressed
