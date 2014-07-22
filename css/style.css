@@ -1,0 +1,42 @@
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+/* =====================================================
+Variables 
+===================================================== */
+h1, h2 {
+  color: navy; }
+
+#mypara {
+  font-size: 18px;
+  border: 1px solid navy;
+  padding: 15px 15px 15px 15px; }
+
+#mypara:after {
+  content: " with an appended string"; }
+
+/* =====================================================
+center content
+===================================================== */
+body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0; }
+
+/* =====================================================
+Nested Styles
+===================================================== */
+body {
+  font-family: Helvetica, Arial, sans-serif; }
+  body p {
+    font-family: Times; }
+  body p#mypara {
+    font-family: "Courier New"; }
+
+#mypara {
+  color: #404040;
+  border: 1px solid #404040;
+  padding: 10px; }
+  #mypara:hover {
+    color: red; }
