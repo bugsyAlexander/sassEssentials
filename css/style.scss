@@ -7,8 +7,14 @@
 Variables 
 ===================================================== */
 
-$myColor1: navy;
-$myColor2: navy;
+$myColor1		: navy;
+$myColor2		: navy;
+
+$primaryColor	: #1C2329;
+$secColor		: #2A343D;
+$gray			: #444F58;
+$lightGray		: #77848C;
+$lightestGray	: #9DA9AE;
 
 $myStringVar: " with an appended string";
 
@@ -19,7 +25,7 @@ $thinBorder: 1px solid $myColor1;
 $paddingVar: 15px 15px 15px 15px;
 
 h1, h2 {
-    color: $myColor1;
+    color: $primaryColor;
 }
 
 #mypara {
@@ -58,11 +64,31 @@ body {
 }
 
 #mypara {
-    color: #404040;
-    border: 1px solid #404040;
+    color: $gray;
+    border: 1px solid $lightGray;
     padding: 10px;
     // parent:hover || a:hover from this example
     &:hover {
         color: red;
     }
+}
+
+/* =====================================================
+SASS Mixins
+===================================================== */
+
+@mixin commonTraits {
+    border-radius: 10px;
+    border: 1px solid $lightestGray;
+    padding: 10px;
+}
+
+header {
+    color: $secColor;
+    @include commonTraits;
+}
+
+footer {
+    color: $primaryColor;
+    @include commonTraits;
 }

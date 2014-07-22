@@ -6,7 +6,7 @@
 Variables 
 ===================================================== */
 h1, h2 {
-  color: navy; }
+  color: #1c2329; }
 
 #mypara {
   font-size: 18px;
@@ -35,8 +35,23 @@ body {
     font-family: "Courier New"; }
 
 #mypara {
-  color: #404040;
-  border: 1px solid #404040;
+  color: #444f58;
+  border: 1px solid #77848c;
   padding: 10px; }
   #mypara:hover {
     color: red; }
+
+/* =====================================================
+SASS Mixins
+===================================================== */
+header {
+  color: #2a343d;
+  border-radius: 10px;
+  border: 1px solid #9da9ae;
+  padding: 10px; }
+
+footer {
+  color: #1c2329;
+  border-radius: 10px;
+  border: 1px solid #9da9ae;
+  padding: 10px; }
