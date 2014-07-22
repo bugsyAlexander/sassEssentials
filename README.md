@@ -7,7 +7,6 @@
 * Nested rules
 * Mixins
 * Operators
-
 * Define mixins with arguments
 * Functions
 * Using output-style formatting
