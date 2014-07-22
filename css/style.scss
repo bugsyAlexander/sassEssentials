@@ -69,7 +69,7 @@ body {
     padding: 10px;
     // parent:hover || a:hover from this example
     &:hover {
-        color: red;
+        color: $secColor;
     }
 }
 
@@ -91,4 +91,25 @@ header {
 footer {
     color: $primaryColor;
     @include commonTraits;
+}
+
+/* =====================================================
+Operations
+===================================================== */
+$gender: boy;
+$myColor: if($gender=="boy", #00f, #f00);
+
+// $myColor		: #f00;
+$basepadding	: 10px;
+$basethickness	: 4px;
+
+#mypara {
+	// add colors together === magenta
+    // color: $myColor + #00f;
+
+    color: $myColor;
+    // 4px + 10 = 14 / 2 = 7px 
+    border: ($basethickness + 10 / 2) solid $myColor;
+    // basic math to add more to preset $basepadding variable 
+    padding: $basepadding + 20; // 10 + 20 = 30px
 }

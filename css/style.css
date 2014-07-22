@@ -39,7 +39,7 @@ body {
   border: 1px solid #77848c;
   padding: 10px; }
   #mypara:hover {
-    color: red; }
+    color: #2a343d; }
 
 /* =====================================================
 SASS Mixins
@@ -55,3 +55,11 @@ footer {
   border-radius: 10px;
   border: 1px solid #9da9ae;
   padding: 10px; }
+
+/* =====================================================
+Operations
+===================================================== */
+#mypara {
+  color: blue;
+  border: 9px solid blue;
+  padding: 30px; }
